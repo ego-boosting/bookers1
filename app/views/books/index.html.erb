@@ -13,76 +13,85 @@
     <tr>
       <td>リーダブルコード</td>
       <td>より良いコードを書くためのシンプルで実践的なテクニック</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>Show</td>
+      <td>Edit</td>
+      <td>Destory</td>
     </tr>
     <tr>
       <td>トラベル知らずのシステム設計</td>
       <td>システム設計の要点を図解で説明してくれます</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>Show</td>
+      <td>Edit</td>
+      <td>Destory</td>
     </tr>
     <tr>
       <td>たのしいRuby</td>
       <td>Rubyの入門におすすめです</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>Show</td>
+      <td>Edit</td>
+      <td>Destory</td>
     </tr>
     <tr>
       <td>入門Git</td>
       <td>gitについての基本操作から内部構造まで解説してくれます</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>Show</td>
+      <td>Edit</td>
+      <td>Destory</td>
     </tr>
     <tr>
       <td>アルゴリズム図鑑</td>
       <td>アルゴリズムについてカラーイラストでしっかり解説してくれます</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>Show</td>
+      <td>Edit</td>
+      <td>Destory</td>
     </tr>
     <tr>
       <td>達人プログラマー</td>
       <td>プログラマ入門者は必読！</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>Show</td>
+      <td>Edit</td>
+      <td>Destory</td>
     </tr>
     <tr>
       <td>プログラマ入門者は必読！</td>
       <td>効率的なSQL文を教えてくれます</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>Show</td>
+      <td>Edit</td>
+      <td>Destory</td>
     </tr>
     <tr>
       <td>a</td>
       <td>aa</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>Show</td>
+      <td>Edit</td>
+      <td>Destory</td>
     </tr>
     <tr>
       <td>test1</td>
       <td>5000</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>Show</td>
+      <td>Edit</td>
+      <td>Destory</td>
     </tr>
     <tr>
       <td>aa</td>
       <td>aaa</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>Show</td>
+      <td>Edit</td>
+      <td>Destory</td>
     </tr>
 
   </tbody>
 </table>
 <h2>New book</h2>
+<%= form_with model: @book do |f| %>
+  <h4>Title</h4>
+  <%= f.text_field :title %>
+
+  <h4>Body</h4>
+  <%= f.text_area :body %>
+
+  <%= f.submit 'Create Book',class: "button" %>
+<% end %>
 
 
